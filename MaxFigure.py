@@ -91,8 +91,8 @@ t = Triangle( (point1, point2, point3) )
 
 pts = points_open("plist.txt")
 triangles = sorted(triangles_finder(pts))
-
-print(triangles[0])
+n = len(triangles)
+print(triangles[0], triangles[n-1])
 
 
 
