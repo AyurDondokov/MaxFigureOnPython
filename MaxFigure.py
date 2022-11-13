@@ -128,16 +128,16 @@ def find_triangles_from_points(points):
     return triangles_array
 
 
-def find_max_min_quadrilaterals(points):
+def find_max_min_quadrilaterals(points_array):
     quadrilaterals = [None, None]
     max_area = 0
     min_area = 10000000
-    count_of_points = len(points)
+    count_of_points = len(points_array)
     for i in range(0, count_of_points):
         for j in range(0, count_of_points):
             for k in range(0, count_of_points):
                 for h in range(0, count_of_points):
-                    points = (points[i], points[j], points[k], points[h])
+                    points = (points_array[i], points_array[j], points_array[k], points_array[h])
                     if is_convex_quadrilateral(points):
                         four = Quadrilateral(points)
                         if four.get_area != 0:
