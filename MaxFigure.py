@@ -166,4 +166,4 @@ print(f"Count of triangles: {n}")
 print(f"The smallest triangle: {triangles[0].get_area}\n The biggest triangle: {triangles[n-1].get_area}")
 
 f = find_max_min_quadrilaterals(pts)
-print(f"The smallest quadrilateral: {f[0].get_area}\n The biggest quadrilateral: {f[1].get_area}")
+print(f"The smallest quadrilateral: {f[1].get_area}\n The biggest quadrilateral: {f[0].get_area}")
